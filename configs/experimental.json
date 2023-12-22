@@ -1,0 +1,20 @@
+{
+  "datamodule": {
+    "batch_size": 128,
+    "num_workers": 10,
+    "data_dir": "./data",
+    "train_val_split": [ 0, 0 ]
+  },
+  "model": {
+    "model_type": "template",
+    "lr": 0.0001,
+    "b1": 0.5,
+    "b2": 0.999
+  },
+  "trainer": {
+    "max_epochs": 50,
+    "log_dir": "./saved/lightning_logs/",
+    "logger_name": "experimental",
+    "fast_dev_run": false
+  }
+}
